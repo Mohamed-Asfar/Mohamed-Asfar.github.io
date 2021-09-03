@@ -1,8 +1,8 @@
 body
 {
 	font-family: tahoma;
-	color: rgb(54, 45, 65) ;
-	background-color: rgb(95, 94, 94);
+	color: rgb(81, 41, 129) ;
+	background-color: rgb(221, 221, 221);
 	margin-left: 75px;
 	margin-right: 75px;
 }
@@ -22,7 +22,7 @@ h1, h2, h3
 a
 {
 	text-decoration: none;
-	color: rgb(139, 50, 124);
+	color: rgb(185, 39, 161);
 	font-weight: bold;
 }
 
