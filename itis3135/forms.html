@@ -30,19 +30,19 @@
 			<h4>Please enter your information below to recieve newsletters or coupons!</h4>
 			<label for="name">Name:</label>
 			<br>
-			<input type="text" id="name" name="name"><br>
+			<input type="text" id="name" name="name" placeholder="John Doe" size="40" required><br>
 
 			<label for="number">Phone Number:</label>
 			<br>
-			<input type="text" id="number" name="number"><br>
+			<input type="number" id="number" name="number" placeholder="1234567890" required><br>
 
 			<label for="email">Email:</label>
 			<br>
-			<input type="text" id="email" name="email">
+			<input type="email" id="email" name="email" placeholder="JohnDoe@gmail.com" required>
 		
 
 
-			<h4>Tell us about you! This will help us give you the best deals for you!</h4>
+			<h4>Tell us about you! This will help us give you the best deals!</h4>
 			<h4>What's your style?</h4>
 			<input type="radio" id="cold" name="fav_coffee" value="Cold Brew">
   			<label for="cold">Cold Brew</label>
@@ -68,6 +68,16 @@
   			<label for="do4">Jelly Filled</label><br>
 			<input type="checkbox" id="do5" name="do5" value="Custard Filled">
   			<label for="do5">Custard Filled</label>
+
+
+		<h4>How would you like to recieve your coupons!</h4>
+	    <div class="custom-select" style="width:200px;">
+			<select>
+				  <option value="0">Preference</option>
+				  <option value="1">Phone Number</option>
+				  <option value="2">Email</option>
+			</select>
+		</div>
 
 			<input type="submit" value="Submit">
 		</form>
