@@ -19,7 +19,7 @@ thead
 	background-color: rgb(158, 55, 153);
 }
 
-th, td
+th, td, li
 {
 	border: 1px solid black;
 	padding: .2em 1em .2em .5em;
