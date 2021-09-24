@@ -27,7 +27,7 @@ function breakfastFunc(){
 var totalMoney = prompt("How much money do you have :)",1000);
 var foodMoney = prompt("How much was your breakfast today?", 101);
 var newfMoney = totalMoney - foodMoney;
-    alert("This is how much money you have now, unless you made breakfast at home which was probably smart but oh well:)" + newfMoney);
+    alert("This is how much money you have now, unless you made breakfast at home which was probably smart but oh well:): " + newfMoney);
 }
 
 //2nd
@@ -35,15 +35,15 @@ function lunchFunc(){
 var totalMoney = prompt("How much money do you have :)",1000);
 var foodMoney = prompt("How much was your lunch today?", 101);
 var newlMoney = totalMoney - foodMoney;
-    alert("This is how much money you have now, unless you made a lunch at home which was probably smart but oh well:)" + newlMoney);
+    alert("This is how much money you have now, unless you made a lunch at home which was probably smart but oh well:): " + newlMoney);
 }
 
 //3rd
-function DinnerFunc(){
+function dinnerFunc(){
 var totalMoney = prompt("How much money do you have :)",1000);
 var foodMoney = prompt("How much was your dinner today?", 101);
 var newdMoney = totalMoney - foodMoney;
-    alert("This is how much money you have now, unless you made dinner at home which was probably smart but oh well:)" + newdMoney);
+    alert("This is how much money you have now, unless you made dinner at home which was probably smart but oh well:): " + newdMoney);
 }
 
 //4th
