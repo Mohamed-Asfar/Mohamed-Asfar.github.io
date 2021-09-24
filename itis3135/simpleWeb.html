@@ -27,6 +27,30 @@
 	</nav>	
 	
 	<main>
+        <p id="temp">
+            Today is 
+            <script> 
+            document.getElementById("temp").innerHTML = date.getMonth() + 1;
+            document.getElementById("temp").innerHTML = "/"
+            document.getElementById("temp").innerHTML = date.getDate();
+            document.getElementById("temp").innerHTML = "/"
+            document.getElementById("temp").innerHTML = date.getYear();
+            </script>, 
+            and the time is: 
+            <script>
+            document.getElementById("temp").innerHTML = date.getHour();
+            document.getElementById("temp").innerHTML = ":"
+            document.getElementById("temp").innerHTML = date.getMinutes();
+            </script>
+            The Mad Aye Aye Inc. welcomes you, 
+            <script>
+            document.getElementById("temp").innerHTML = name;
+            </script>! 
+            We're glad you are doing 
+            <script>
+             document.getElementById("temp").innerHTML = condition;   
+            </script>!
+        </p>
 	<button onclick="alertFunc()">Test Alert</button>
     <button onclick="mainFunc()">Test Main</button>
 	</main>
