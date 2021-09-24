@@ -27,7 +27,18 @@
 	</nav>	
 	
 	<main>
-        <p id="temp">
+        <script>
+            document.write("<h2>Hello!</h2>");
+            document.write("Today is ");
+            document.write(today.toDateString());
+            
+        </script>
+        
+        
+        
+        
+        
+        <!--<p id="temp">
             Today is 
             <script> 
             document.getElementById("temp").innerHTML = date.getMonth() + 1;
@@ -51,6 +62,7 @@
             document.getElementById("temp").innerHTML = condition.prompt();   
             </script>!
         </p>
+    -->
 	<button onclick="alertFunc()">Test Alert</button>
     <button onclick="mainFunc()">Test Main</button>
 	</main>
