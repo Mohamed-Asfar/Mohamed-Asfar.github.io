@@ -27,27 +27,12 @@
 	</nav>	
 	
 	<main>
-        <script>
-            var today = new Date();
-            document.write("<h2>Hello!</h2>");
-            document.write("Today is ");
-            document.write(today.toDateString());
-            
-        </script>
         
-        
-        
-        
-        
-        <!--<p id="temp">
+        <p id="temp">
             Today is 
-            <script> 
-            document.getElementById("temp").innerHTML = date.getMonth() + 1;
-            document.getElementById("temp").innerHTML = "/"
-            document.getElementById("temp").innerHTML = date.getDate();
-            document.getElementById("temp").innerHTML = "/"
-            document.getElementById("temp").innerHTML = date.getYear();
-            </script>, 
+            <script type="text/javascript" src="scripts/swi.js">
+            todayDate();
+            </script> , 
             and the time is: 
             <script>
             document.getElementById("temp").innerHTML = date.getHour();
@@ -63,7 +48,7 @@
             document.getElementById("temp").innerHTML = condition.prompt();   
             </script>!
         </p>
-    -->
+
 	<button onclick="alertFunc()">Test Alert</button>
     <button onclick="mainFunc()">Test Main</button>
 	</main>
