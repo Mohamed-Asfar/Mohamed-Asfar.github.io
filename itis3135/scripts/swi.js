@@ -5,5 +5,5 @@ var condition = prompt("How are you doing", "Good, Great, etc.");
 }
 function todayDate(){
     var today = new Date();
-    today.toDateString();
+    document.write(today.toDateString());
 }
