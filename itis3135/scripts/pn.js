@@ -1,67 +1,86 @@
 // alert introducing funcitonality
-alert("The Mad Aye Aye would like a number to determine the amount of sides and give you what polygon it represents");
+alert("The Mad Aye Aye would like a number to determine the amount of sides and give you what polygon it represents!");
+
+// Validates the entry
+function validateEntry(x)
+{
+
+var x;
+if( x >= -10 && x <= 10)
+{
+    Math.abs(x);
+    Math.round(x);
+}
+else
+{
+    alert("Please re-enter a number 0-10");
+    getShape();
+}
+}
+
+
 // Takes user input and returns shape name
 function getShape()
 {
 
-let num;
+var num;
 
-var polygon = prompt("Please enter your number: ", 0-10);
+var polygon = prompt("Please enter your number: ", 1);
 
-switch(polygon)
+
+
+validateEntry(polygon);
+
+switch(true)
 {
-    case 0:
+    case polygon == 0:
         num = "Circle!";
         break;
 
-    case 1:
+    case polygon == 1:
         num = "Monogon!";
         break;
 
-    case 2:
+    case polygon == 2:
         num = "Bigon!";
         break;
 
-    case 3:
+    case polygon == 3:
         num = "Triangle!";
         break;
 
-    case 4:
+    case polygon == 4:
         num = "Quadrilateral!";
         break;
 
-    case 5:
+    case polygon == 5:
         num = "Pentagon!";
         break;
 
-    case 6:
+    case polygon == 6:
         num = "Hexagon!";
         break;
 
-    case 7:
+    case polygon == 7:
         num = "Heptagon!";
         break;
 
-    case 8:
+    case polygon == 8:
         num = "Octagon!";
         break;
 
-    case 9:
+    case polygon == 9:
         num = "Nonagon!";
         break;
 
-    case 10:
+    case polygon == 10:
         num = "Undecagon!";
         break;
 
 }
 
-alert("Your polygon is: " + num);
+
+alert("Your polygon is a: " + num);
 
 }
 
-// Validates the entry
-function validateEntry()
-{
-
-}
