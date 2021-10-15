@@ -12,7 +12,7 @@
 	</header>
 	<main>
 		<script>
-			function tabs(evt, cityName) {
+			function tabs(event, tabName) {
 			  var i, body, links;
 			  body = document.getElementsByClassName("body");
 			  for (i = 0; i < body.length; i++) {
@@ -22,42 +22,19 @@
 			  for (i = 0; i < links.length; i++) {
 				links[i].className = links[i].className.replace(" active", "");
 			  }
-			  document.getElementById(cityName).style.display = "block";
+			  document.getElementById(tabName).style.display = "block";
 			  evt.currentTarget.className += " active";
 			}
 		</script>
 
 		<div class="tab">
-			<button class="links" onclick="tabs(event, 'Home')">Home</button>
-			<button class="links" onclick="tabs(event, 'Probability')">Probability</button>
-			<button class="links" onclick="tabs(event, 'Payout')">Payout</button>
-			<button class="links" onclick="tabs(event, 'Enter')">Enter</button>
-			<button class="links" onclick="tabs(event, 'Winnings')">Winnings</button>
+            <button class="links" onclick="tabs(event, 'Home')"><a href="chome.html">Home</a></button>
+			<button class="links" onclick="tabs(event, 'Probability')"><a href="cprobability.html">Probability</a></button>
+			<button class="links" onclick="tabs(event, 'Payout')"><a href="cpayout.html">Payout</a></button>
+			<button class="links" onclick="tabs(event, 'Enter')"><a href="center.html">Enter</a></button>
+			<button class="links" onclick="tabs(event, 'Winnings')"><a href="cwinning.html">Winnings</a></button>
 		  </div>
 		  
-		  <div id="Home" class="body">
-			<h3>Home</h3>
-			<p>My client is Colin Joyce a graduate student here, who created a lottery that i will be making a website for.
-
-				Intented audience are people who want to make money if they are lucky enough.
-			</p>
-		  </div>
-		  
-		  <div id="Probability" class="body">
-			<h3>Probability Calculator</h3>
-			<p>Shows the description and Probability that the user can expect from this lottery</p> 
-		  </div>
-		  
-		  <div id="Payout" class="body">
-			<h3>Payout</h3>
-			<p>Payout calculator, gives the entry the ability to calculate how much they won</p>
-		  </div>
-
-		  <div id="Enter" class="body">
-			<h3>Enter</h3>
-			<p>This is how u enter, choosing 4 numbers and higher or lower. Will elaborate later.</p>
-		  </div>
-
 		  <div id="Winnings" class="body">
 			<h3>Are you a Winner?</h3>
 			<p>Display winnings of every tier</p>
