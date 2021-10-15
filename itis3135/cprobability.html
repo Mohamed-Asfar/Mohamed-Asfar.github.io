@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/cdefault.css" rel="stylesheet" type="text/css" >
+	<title>Lucky 4</title>
+</head>
+
+<body>
+	<header>
+	<h1>Lucky 4</h1>
+	</header>
+	<main>
+		<script>
+			function tabs(evt, cityName) {
+			  var i, body, links;
+			  body = document.getElementsByClassName("body");
+			  for (i = 0; i < body.length; i++) {
+				body[i].style.display = "none";
+			  }
+			  links = document.getElementsByClassName("links");
+			  for (i = 0; i < links.length; i++) {
+				links[i].className = links[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+		</script>
+
+		<div class="tab">
+			<button class="links" onclick="tabs(event, 'Home')">Home</button>
+			<button class="links" onclick="tabs(event, 'Probability')">Probability</button>
+			<button class="links" onclick="tabs(event, 'Payout')">Payout</button>
+			<button class="links" onclick="tabs(event, 'Enter')">Enter</button>
+			<button class="links" onclick="tabs(event, 'Winnings')">Winnings</button>
+		  </div>
+		  
+		  <div id="Home" class="body">
+			<h3>Home</h3>
+			<p>My client is Colin Joyce a graduate student here, who created a lottery that i will be making a website for.
+
+				Intented audience are people who want to make money if they are lucky enough.
+			</p>
+		  </div>
+		  
+		  <div id="Probability" class="body">
+			<h3>Probability Calculator</h3>
+			<p>Shows the description and Probability that the user can expect from this lottery</p> 
+		  </div>
+		  
+		  <div id="Payout" class="body">
+			<h3>Payout</h3>
+			<p>Payout calculator, gives the entry the ability to calculate how much they won</p>
+		  </div>
+
+		  <div id="Enter" class="body">
+			<h3>Enter</h3>
+			<p>This is how u enter, choosing 4 numbers and higher or lower. Will elaborate later.</p>
+		  </div>
+
+		  <div id="Winnings" class="body">
+			<h3>Are you a Winner?</h3>
+			<p>Display winnings of every tier</p>
+		  </div>
+
+	</main>
+	
+	<footer>
+		<p>
+			Page built by Mohamed Asfar
+
+			All help used was from https://www.w3schools.com/
+		</p>
+		<a href="https://validator.w3.org/check?uri=referer">HTML VAL
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">CSS VAL
+		</a>
+	
+	</footer>
+
+</body>
+
+</html>
