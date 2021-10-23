@@ -4,40 +4,49 @@
 	<meta charset="UTF-8">
 	<link href="styles/ss9.css" rel="stylesheet" type="text/css" >
     <script type="text/javascript" src="scripts/ss.js"></script>
-    <script src="jquery-3.6.1.min.js"></script> 
+    <script src="jquery-3.1.1.min.js"></script> 
 	<title>Mohamed's Slideshow</title>
 </head>
 
 <body>
 	<header>
-			
+			<h1>Mohamed Asfar || 3135</h1>
 	</header>
 
 	<main>
-	<div id="slideshow">
-        <img src="Ayeaye.jpg">
-        <img src="ayeaye1.jpg">
-        <img src="ayeaye2.jpg">
-        <img src="ayeaye3.jpg">
-        <img src="ayeaye4.jpg">
-        <img src="ayeaye5.jpg">
-    </div>
+        <h2>Slide Show</h2>
+	
+        <div class="box">
+            <div class="slider-outer">
+                <img src="images/aleft.jpg" class="back" alt="Back">
+                <div class="slider-inner">
+                    <img src="images/Aye-aye.jpg" class="active">
+                    <img src="images/ayeaye1.jpg">
+                    <img src="images/ayeaye2.jpg">
+                    <img src="images/ayeaye3.jpg">
+                    <img src="images/ayeaye4.jpg">
+                    <img src="images/ayeaye5.jpg">
 
-    <div id="back">Back</div>
-    <div id="next">Next</div>
+                </div>
+                <img src="images/aright.jpg" class="next" alt="Next">
+            </div>
+        </div>
+
 	</main>
 	
 	<footer>
 		
 		<p>
 			Page built by Mohamed Asfar
+
+            All the help I recieved was from this youtube video https://www.youtube.com/watch?v=J2HLW4A40X8
 		</p>
 		<a href="https://validator.w3.org/check?uri=referer">
-			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+			HTML Validator
 		</a>
 
 		<a href="https://jigsaw.w3.org/css-validator/check/referer">
-			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+			CSS Validator
 		</a>
 	
 	</footer>

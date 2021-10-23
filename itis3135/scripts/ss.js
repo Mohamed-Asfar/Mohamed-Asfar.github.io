@@ -1,16 +1,23 @@
-$(function()
-{
-    $('#slideshow img:gt(0)').hide();
+$(document).ready(function(){
+$('.next').on('click', function(){
+    var actImage = $('.active');
+    var nextImage = actImage.next();
 
-    $('#back').click(function()
-{
-        $('#slideshow img:first').fadeOut(800);
-        $('#slideshow img:last').fadeIn(800).prepentTo('#slideshow');
+    if(nextImage.length){
+        actImage.removeClass('active').css('z-index', -10);
+        nextImage.addClass('active').css('z-index', 10);
+        console.log('clicked');
+    }
+});
 
+$('.back').on('click', function(){
+    var actImage = $('.active');
+    var backImage = actImage.back();
+
+    if(backImage.length){
+        actImage.removeClass('active').css('z-index', -10);
+        backImage.addClass('active').css('z-index', 10);
+    }
 });
-    $('#next').click(function()
-{
-    $('#slideshow img:first').fadeOut(800).next().fadeIn(800).end().appendTo('#slideshow');
-    
-});
+
 });
