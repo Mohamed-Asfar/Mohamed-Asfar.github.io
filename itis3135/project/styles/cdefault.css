@@ -1,0 +1,80 @@
+body
+{
+	font-family: American Typewriter, serif;
+	color: #05386B ;
+	background-color: #5CDB95;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+
+header, footer
+{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+	text-align: left;
+}
+
+h2, h3, h4, h5
+{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+	text-align: center;
+	line-height: 0px;
+	font-weight: bold;
+}
+
+a
+{
+	text-decoration: none;
+	color: #05386B;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #04294e;
+}
+
+figure
+{
+	text-align: center;
+}
+
+
+
+.tab {
+	overflow: hidden;
+	border: 1px solid #8EE4AF;
+	background-color: #5CDB95;
+  }
+  
+
+  .tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	color:#05386B;
+  }
+  
+
+  .tab button:hover {
+	background-color: #49ac75;
+  }
+  
+ 
+  .tab button.active {
+	background-color: #f0c330;
+  }
+  
+
+  .tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+  }
