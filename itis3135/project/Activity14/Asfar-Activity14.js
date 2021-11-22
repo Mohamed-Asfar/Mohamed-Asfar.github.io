@@ -1,11 +1,13 @@
 $(document).ready(function() {
+    //Adds on click function
 	$("#nav_list li").click(function(){
         $.ajax({
+            //Fetches info folder
             url: "json_files/" + $(this).children("a").attr("title") + ".json",
             dataType: "json",
             success: function(data){
                 $.each(data, function(){
-                    $.each(this, function( key, value){
+                    $.each(this, function( temp, value){
                         $("main h1").html(value.title);
                         $("main h2").html(value.month + "" + value.speaker);
                         $("main img").attr("src", value.image);
@@ -17,3 +19,5 @@ $(document).ready(function() {
         });
     });     
 }); // end ready
+
+// https://www.w3schools.com/ as a reference this was confusing until i understood how the pathing worked
