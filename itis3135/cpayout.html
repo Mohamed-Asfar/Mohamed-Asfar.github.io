@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="styles/cdefault.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="scripts/cjs.js"></script>
 	<title>Lucky 4</title>
 </head>
 
@@ -11,21 +15,7 @@
 	<h1>Lucky 4</h1>
 	</header>
 	<main>
-		<script>
-			function tabs(event, tabName) {
-			  var i, body, links;
-			  body = document.getElementsByClassName("body");
-			  for (i = 0; i < body.length; i++) {
-				body[i].style.display = "none";
-			  }
-			  links = document.getElementsByClassName("links");
-			  for (i = 0; i < links.length; i++) {
-				links[i].className = links[i].className.replace(" active", "");
-			  }
-			  document.getElementById(tabName).style.display = "block";
-			  evt.currentTarget.className += " active";
-			}
-		</script>
+
 
 		<div class="tab">
             <button class="links" onclick="tabs(event, 'Home')"><a href="chome.html">Home</a></button>
@@ -50,7 +40,7 @@
 		</p>
 		<a href="https://validator.w3.org/check?uri=referer">HTML VAL
 		</a>
-
+		<br></br>
 		<a href="https://jigsaw.w3.org/css-validator/check/referer">CSS VAL
 		</a>
 	
