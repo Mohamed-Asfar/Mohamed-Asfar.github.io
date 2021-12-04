@@ -13,7 +13,7 @@ header, footer
 	text-align: left;
 }
 
-h2, h3, h4, h5
+h2, h5
 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
 	text-align: center;
@@ -21,6 +21,24 @@ h2, h3, h4, h5
 	font-weight: bold;
 }
 
+h3
+{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+	text-align: center;
+	line-height: 0px;
+	font-weight: bold;
+	border: 5px solid #04294e;
+	padding: 9px;
+	
+}
+
+h4
+{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+	text-align: left;
+	line-height: 0px;
+	font-weight: bold;
+}
 a
 {
 	text-decoration: none;
