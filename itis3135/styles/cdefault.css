@@ -96,3 +96,12 @@ figure
 	border: 1px solid #ccc;
 	border-top: none;
   }
+
+  .center
+  {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	height: 10%;
+  }
