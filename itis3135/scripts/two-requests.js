@@ -1,27 +1,35 @@
-$(document).ready(function(){
+window.onload = function(){
+    var getFirst = document.getElementById("getFirst");
 
-    $.getJSON("first-req.json", function(data) {
-        $.each(data, function() {
-        $.each(this, function(key, value) {
-        $("#first").append(
-        "<h2>" + value.title + "</h2>" +
-        "<h3>" + value.content + "</h3>" +
-        "<p>" + value.bio + "</p><br>"
-        );
-        });
-        });
-        });
+    var request = document.getElementById("request");
+    
+    var x = new XMLHttpRequest();
 
-});
+    getFirst.addEventListener("click",function(){
 
-function secReq() {
-    var two = new XMLHttpRequest();
-    two.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("second").innerHTML =
-        this.responseText;
-      }
-    };
-    two.open("GET", "second-req.txt", true);
-    two.send();
-  }
+        x.addEventListener("readystatechange",function(){
+
+            request.innerHTML = this.responseText;
+        });
+        x.open("GET","scripts/first-req.txt",true);
+        x.send();
+    });
+
+    var getSecond = document.getElementById("getSecond");
+
+    var y = new XMLHttpRequest();
+
+    getSecond.addEventListener("click",function(){
+        y.addEventListener("readystatechange",function(){
+
+            var info = JSON.parse(y.responseText);
+
+            for(p in info){
+                request.innerHTML += p + ":" + info[p]
+            }
+        });
+        y.open("GET","scripts/second-req.json",true);
+    y.send();
+    });
+   
+};
